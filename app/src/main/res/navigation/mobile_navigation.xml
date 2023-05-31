@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_get_all_notes">
+
+    <fragment
+        android:id="@+id/nav_get_all_notes"
+        android:name="com.example.notespro.ui.notesRead.GetAllNotesFragment"
+
+        tools:layout="@layout/fragment_get_all_notes" />
+
+    <fragment
+        android:id="@+id/nav_add_note"
+        android:name="com.example.notespro.ui.notesUpdate.AddNoteFragment"
+
+        tools:layout="@layout/fragment_add_note" />
+
+    <fragment
+        android:id="@+id/nav_to_do_fragment"
+        android:name="com.example.notespro.ui.toDo.ToDoFragment"
+
+        tools:layout="@layout/fragment_to_do" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.notespro.ui.logout.LogOutFragment"
+
+        tools:layout="@layout/fragment_log_out" />
+
+    <!--    <activity-->
+<!--        android:id="@+id/nav_logout"-->
+<!--        android:name="com.example.notespro.ui.logout.LogOutFragment"-->
+<!--        android:label="@string/log_out_title"-->
+<!--        tools:layout="@layout/fragment_log_out"-->
+<!--        />-->
+</navigation>
